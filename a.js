@@ -69,4 +69,5 @@ function aaa () {
 // 如果要推送的本地分支和远端分支已有，可以简写为
 //   git push origin 分支
 // 1. - 之后有了新的历史记录的时候，直接 ：
-        //    git push
+ //    git push
+//  git clone 远程仓库地址 命令，即可将远程仓库的代码拉取到本地
