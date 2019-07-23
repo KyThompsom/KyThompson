@@ -42,3 +42,31 @@ function aaa () {
 // $ git checkout dev
 // # 也可以使用下面的命令，代替上面两个命令；下面的命令表示创建并切换分支到dev上
 // $ git checkout -b dev
+// 我们把dev分支的工作成果合并到master分支上：
+    // $ git merge dev
+// git merge命令用于合并指定分支到当前分支。
+// 合并完成后，就可以放心地删除dev分支了：
+    // $ git branch -d dev
+
+// # 查看分支
+// git branch
+// # 创建分支
+// $ git branch <name>
+// # 切换分支
+// $ git checkout <name>
+// # 创建+切换分支
+// $ git checkout -b <name>
+// # 合并某分支到当前分支
+// $ git merge <name>
+// # 删除分支
+// $ git branch -d <name>
+
+// # 别名我们通常喜欢使用 origin 作为默认仓库的别名
+// $ git remote add 别名 远程仓库地址
+// # -u 的作用是记住本次的 push 地址和分支信息
+//   # 如果不加 -u，则下一次 push 的时候，还需要使用完整的命令
+//   $ git push -u 远程仓库地址别名 本地分支:远程分支
+// 如果要推送的本地分支和远端分支已有，可以简写为
+//   git push origin 分支
+// 1. - 之后有了新的历史记录的时候，直接 ：
+        //    git push
